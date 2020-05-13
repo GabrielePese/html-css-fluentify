@@ -1,0 +1,202 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+#contenitore{
+  height: 300px;
+  width: auto;
+  background-color: blue;
+}
+
+header{
+  margin: 0 10%;
+  background-color: red;
+  height: 300px;
+  width: auto;
+
+}
+
+
+
+#partealta{
+  height: 50px;
+  width: 100%;
+  background-color: yellow;
+
+}
+#menu::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#logo{
+  height: 45px;
+  width: 20%;
+  background-color: grey;
+  float:left;
+}
+
+nav{
+  height: 45px;
+  width: 45%;
+  background: green;
+  float:left;
+}
+
+nav > ul{
+  display: inline-block;
+  height: 40px;
+  width: 200px;
+}
+
+li{
+  display: inline-block;
+}
+
+a{
+  display: inline-block;
+}
+#bottonidx{
+  height: 45px;
+  width: 35%;
+  background: purple;
+  float:left;
+}
+#partecentrale{
+  position: relative;
+  height: 250px;
+  width: 100%;
+}
+
+#sezione1{
+  position: absolute;
+  top: 80px;
+}
+
+
+h1{
+  margin-bottom: 20px;
+
+}
+
+#bottonepiano{
+  background-color: green;
+  height: 40px;
+  width: 100px;
+}
+
+
+.strisciagrigia{
+  position:relative;
+  background-color: grey;
+  height: 100px;
+  width: 100%
+}
+#sezione2{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+#sezione2 p{
+  text-align: center;
+}
+
+#blocco3icone{
+  border-bottom: grey 5px solid;
+  width: 100%;
+  height: auto;
+}
+
+#cont3col{
+  margin: 0 10%;
+  height: 300px;
+  background-color: green;
+
+}
+#cont3col::after{
+  content: "";
+  display:table;
+  clear: both;
+}
+.blocco{
+  float: left;
+  border: 1px solid blue;
+  width: 33%;
+  height: 300px;
+
+}
+#bloccografico{
+  position: relative;
+  margin: 0 10%;
+}
+
+#bloccografico::after{
+content: "";
+display:table;
+clear: both;
+}
+
+#grafico{
+  float: left;
+  height: 300px;
+  width: 30%;
+  background-color: red;
+}
+
+#testigrafic{
+  position: absolute;
+  width: 70%;
+  top: 50px;
+  left: 450px;
+}
+p a {
+  margin-top:20px;
+}
+
+.strisciagrigia2{
+  background-color: grey;
+  height: 100px;
+  width: 100%;
+  line-height: 100px;
+
+}
+.contenitorebasso{
+   margin: 0 10%;
+
+}
+.contenitorebasso::after{
+  content: "";
+  display: table;
+  clear:both;
+}
+
+#textsxbot{
+  float: left;
+  background-color: green;
+  width: 50%;
+}
+
+#bloccodxbot{
+  float: left;
+  background-color: blue;
+  width: 50%;
+}
+
+#bloccodxbot::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.coldx{
+  float:left;
+  width: 33%;
+  border: 1px solid red;
+  height: 98px;
+}
