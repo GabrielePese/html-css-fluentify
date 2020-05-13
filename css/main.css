@@ -6,17 +6,22 @@ box-sizing: border-box;
 
 
 #contenitore{
-  height: 300px;
+  height: 500px;
   width: auto;
-  background-color: blue;
+  background-image: url(../img/sfondo.png);
+  background-position: right bottom;
+  background-size: 900px;
+  background-repeat: no-repeat;
+}
+
+#sfondoblu{
+  background-color: #0c325a;
 }
 
 header{
   margin: 0 10%;
-  background-color: red;
-  height: 300px;
+  height: 500px;
   width: auto;
-
 }
 
 
@@ -24,9 +29,8 @@ header{
 #partealta{
   height: 50px;
   width: 100%;
-  background-color: yellow;
-
 }
+
 #menu::after{
   content: "";
   display: table;
@@ -35,41 +39,70 @@ header{
 
 #logo{
   height: 45px;
-  width: 20%;
-  background-color: grey;
+  width: 15%;
   float:left;
 }
 
 nav{
+  display: inline-block;
   height: 45px;
   width: 45%;
-  background: green;
   float:left;
+
 }
 
 nav > ul{
   display: inline-block;
   height: 40px;
-  width: 200px;
+  width: 100%;
 }
 
 li{
   display: inline-block;
+  padding-left: 10px;
+  padding-top: 10px;
 }
 
-a{
+nav li a{
   display: inline-block;
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
 }
 #bottonidx{
   height: 45px;
-  width: 35%;
-  background: purple;
+  width: 40%;
+  /* background: purple; */
   float:left;
 }
+
+#bottonidx li{
+  color: white;
+  text-decoration: none;
+  font-size: 10px;
+}
+
+#bottone1{
+  border: 1px solid white;
+  background-color: #0c325a;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+}
+
+#bottone2{
+  background-color: rgb(24, 201, 27);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  border: rgb(24, 201, 27);
+}
+
 #partecentrale{
   position: relative;
   height: 250px;
   width: 100%;
+  top: 50px;
 }
 
 #sezione1{
@@ -79,44 +112,51 @@ a{
 
 
 h1{
-  margin-bottom: 20px;
-
+  margin-bottom: 10px;
+  color:white;
+  font-size: 32px;
+  font-family: Roboto;
+  font-weight: 400;
 }
 
 #bottonepiano{
-  background-color: green;
   height: 40px;
-  width: 100px;
-}
-
-
-.strisciagrigia{
-  position:relative;
-  background-color: grey;
-  height: 100px;
-  width: 100%
-}
-#sezione2{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-}
-
-#sezione2 p{
+  width: 200px;
+  background-color: rgb(24, 201, 27);
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: white;
+  font-size: 12px;
+  line-height: 30px;
   text-align: center;
 }
 
+.strisciagrigia{
+  position:relative;
+  background-color: #d3d3d3;
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.strisciagrigia h2{
+  font-family: Roboto;
+  font-weight: 400;
+  padding-bottom: 10px;
+}
+
+
 #blocco3icone{
-  border-bottom: grey 5px solid;
   width: 100%;
   height: auto;
+  text-align: center;
+  padding-top: 30px;
 }
 
 #cont3col{
   margin: 0 10%;
-  height: 300px;
-  background-color: green;
+  height: 350px;
 
 }
 #cont3col::after{
@@ -126,14 +166,55 @@ h1{
 }
 .blocco{
   float: left;
-  border: 1px solid blue;
   width: 33%;
   height: 300px;
+}
+
+.blocco img{
+  height: 100px;
+  width: 100px;
 
 }
+.blocco h2{
+  color: #7cbb02;
+  font-family: Roboto;
+}
+.riga{
+  height: 2px;
+  width: 60px;
+  border-bottom: 1px solid grey;
+  position: relative;
+  left: 145px;
+  top: 20px;
+}
+.riga2{
+  height: 2px;
+  width: 60px;
+  border-bottom: 1px solid grey;
+  position: relative;
+  left: 160px;
+  top: 20px;
+}
+
+.blocco .txt{
+  padding-top: 40px;
+  font-family: Roboto;
+  color: #808080;
+  padding-left: 50px;
+}
+
+#separatore{
+  height: 2px;
+  border-bottom: 2px solid #d3d3d3;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
 #bloccografico{
   position: relative;
   margin: 0 10%;
+  height: 500px;
+  padding: 40px 100px 0 100px;
 }
 
 #bloccografico::after{
@@ -144,26 +225,38 @@ clear: both;
 
 #grafico{
   float: left;
-  height: 300px;
-  width: 30%;
-  background-color: red;
+  height: 200px;
+  width: 50%;
 }
 
+
 #testigrafic{
-  position: absolute;
-  width: 70%;
+  /* position: absolute;
+  width: 50%;
   top: 50px;
-  left: 450px;
+  left: 450px; */
+  float: left;
+  width: 50%;
+  padding-left: 100px;
+  font-size: 20px;
+  font-family: Roboto;
+}
+.txt2{
+  padding: 20px 0;
+  color:#808080;
+  font-size: 16px;
 }
 p a {
   margin-top:20px;
+  font-size: 15px;
 }
 
 .strisciagrigia2{
-  background-color: grey;
-  height: 100px;
+  background-color: #d3d3d3;
+  height: 140px;
   width: 100%;
-  line-height: 100px;
+  /* text-align: center; */
+  line-height: 120px;
 
 }
 .contenitorebasso{
@@ -178,13 +271,16 @@ p a {
 
 #textsxbot{
   float: left;
-  background-color: green;
   width: 50%;
+}
+
+#textsxbot h2{
+  color: #000000;
+  font-family: Roboto;
 }
 
 #bloccodxbot{
   float: left;
-  background-color: blue;
   width: 50%;
 }
 
@@ -193,10 +289,31 @@ p a {
   display: table;
   clear: both;
 }
+.coldx #bottonebot{
+height: 40px;
+width: 200px;
+background-color: rgb(24, 201, 27);
+border-radius: 5px;
+padding: 5px 10px;
+color: white;
+font-size: 12px;
 
+}
+#BUTHELP{
+  height: 30px;
+  width: 50px;
+  background-color: rgb(24, 201, 27);
+  border-radius: 5px;
+  /* padding: 5px 10px; */
+  color: white;
+  font-size: 12px;
+  position: relative;
+  bottom: 60px;
+  left:70px;
+}
 .coldx{
   float:left;
-  width: 33%;
-  border: 1px solid red;
-  height: 98px;
+  width: 33,3%;
+  height: 120px;
+  margin-left: 20px;
 }
